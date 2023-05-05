@@ -14,7 +14,7 @@ body {
     color: white;
     font-size: 2.8rem;
     margin: auto 20px;
-    animation: moving-brand 3s ease 5s forwards;
+    animation: moving-brand 3s ease 7s forwards;
 }
 
 @keyframes moving-brand {
@@ -28,7 +28,7 @@ body {
 }
 
 .nav-btns {
-    animation: moving-btns 3s ease 5s forwards;
+    animation: moving-btns 3s ease 7s forwards;
 }
 
 @keyframes moving-btns {
@@ -68,7 +68,7 @@ body {
 }
 
 .laptop img {
-    animation: rotate-in 3s ease 5s forwards;
+    animation: rotate-in 3s ease 7s forwards;
 }
 
 @keyframes rotate-in {
@@ -87,7 +87,7 @@ body {
     margin-top: 5rem;
     margin-left: 26rem;
     font-family: 'Source Code Pro', monospace;
-    animation: hide-div 0s 5s forwards;
+    animation: hide-div 0s 7s forwards;
 }
 
 @keyframes hide-div {
@@ -117,7 +117,7 @@ body {
     margin-top: 80px;
     margin-right: 8px;
     width: 47%;
-    animation: hide-div 0s 5s forwards;
+    animation: hide-div 0s 7s forwards;
 }
 
 .info-text::before,
@@ -132,13 +132,13 @@ body {
 
 .info-text::before {
     background-color: #75878b;
-    animation: typewriter 3s steps(28) 1.5s forwards;
+    animation: typewriter 5s steps(28) 1.5s forwards;
 }
 
 .info-text::after {
     width: 0.07em;
     background-color: black;
-    animation: typewriter 3s steps(28) 1.5s forwards,
+    animation: typewriter 5s steps(28) 1.5s forwards,
         blink 500ms steps(28) infinite;
 }
 
@@ -158,7 +158,7 @@ body {
     width: max-content;
     margin-left: 50px;
     transform: scale(0);
-    animation: resize 3s ease 5s forwards;
+    animation: resize 3s ease 7s forwards;
 }
 
 @keyframes resize {
@@ -197,7 +197,7 @@ body {
 }
 
 .blinked {
-    animation: blinked 107ms ease 1.5s forwards;
+    animation: blinked 178.57ms ease 1.5s forwards;
 }
 
 @keyframes blinked {
@@ -219,5 +219,5 @@ body {
     height: 35.5px;
     opacity: 0;
     background-color: white;
-    animation: blinked 107ms 2.035s forwards;
+    animation: blinked 178.57ms 2.392s forwards;
 }
