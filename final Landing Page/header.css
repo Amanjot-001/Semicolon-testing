@@ -40,14 +40,33 @@ body {
 
 .info-text::before {
     background-color: rgb(17, 1, 37);
-    animation: typewriter 7s steps(28) 1s infinite;
+    animation: typewriter 9s steps(28) 1s infinite;
 }
 
 .info-text::after {
     width: 0.07em;
     background-color: white;
-    animation: typewriter 7s steps(28) 1s infinite,
-        blink 500ms steps(28) infinite;
+    animation: typewriter 9s steps(28) 1s infinite,
+        blink 500ms steps(28) infinite,
+        visible 9s 1s infinite;
+}
+
+@keyframes visible {
+    0% {
+        visibility: visible;
+    }
+
+    54% {
+        visibility: visible;
+    }
+
+    55% {
+        visibility: hidden;
+    }
+
+    100% {
+        visibility: hidden;
+    }
 }
 
 @keyframes typewriter {
@@ -55,7 +74,7 @@ body {
         left: 0%;
     }
 
-    72% {
+    50% {
         left: 100%;
     }
 
@@ -71,12 +90,7 @@ body {
 }
 
 .glitch-text {
-    /* text-shadow:
-        0.1em 0 0 rgba(255, 0, 0, 0.75),
-        -0.1em 0.05em 0 rgba(0, 255, 0, 0.75),
-        0.1em 0.05em 0 rgba(0, 0, 255, 0.75); */
-
-    /* animation: glitch 7s ease 1s infinite; */
+    animation: glitch 9s ease 1s infinite;
 }
 
 .glitch-text span {
@@ -84,38 +98,18 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    animation: glitch 7s ease 1s infinite;
-    /* animation-name: visible;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-    animation-delay: 1s; */
+    animation: glitch 9s ease 1s infinite;
 }
 
-/* @keyframes visible {
-    0% {
-        visibility: hidden;
-    }
-
-    72% {
-        visibility: hidden;
-    }
-
-    100% {
-        visibility: visible;
-    }
-} */
-
 .glitch-text span:first-child {
-    /* animation: glitch 7s ease 1s infinite; */
     clip-path: polygon(0 0, 100% 0, 100% 45%, 0 60%);
-    animation: shiftUpper 7s ease 1s infinite;
+    animation: shiftUpper 9s ease 1s infinite;
     opacity: 0.8;
 }
 
 .glitch-text span:last-child {
-    /* animation: glitch 7s ease 1s infinite; */
     clip-path: polygon(0 60%, 100% 45%, 100% 100%, 0 100%);
-    animation: shiftLower 7s ease 1s infinite;
+    animation: shiftLower 9s ease 1s infinite;
     opacity: 0.8;
 }
 
@@ -125,18 +119,22 @@ body {
         visibility: hidden;
     }
 
-    72% {
+    56% {
         transform: translate(0, 0);
         visibility: hidden;
     }
 
-    86% {
-        transform: translate(-0.08em, -0.05em);
+    67% {
+        transform: translate(-0.08em, -0.02em);
         visibility: visible;
     }
 
+    78% {
+        transform: translate(0, 0);
+    }
+
     100% {
-        transform: translate(0.06em, 0.04em);
+        transform: translate(0, 0);
     }
 }
 
@@ -146,18 +144,22 @@ body {
         visibility: hidden;
     }
 
-    72% {
+    56% {
         transform: translate(0, 0);
         visibility: hidden;
     }
 
-    86% {
-        transform: translate(0.08em, 0.05em);
+    67% {
+        transform: translate(0.08em, 0.02em);
         visibility: visible;
     }
 
+    78% {
+        transform: translate(0, 0);
+    }
+
     100% {
-        transform: translate(-0.06em, -0.04em);
+        transform: translate(0, 0);
     }
 }
 
@@ -166,39 +168,46 @@ body {
         text-shadow: none;
     }
 
-    72% {
+    56% {
         text-shadow: none;
     }
 
-    73% {
+    57% {
         text-shadow:
             0.05em 0 0 rgba(255, 0, 0, 0.75),
             -0.05em 0.05em 0 rgba(0, 255, 0, 0.75),
             0.05em 0.05em 0 rgba(0, 0, 255, 0.75);
     }
 
-    84% {
+    64% {
         text-shadow:
             0.05em 0 0 rgba(255, 0, 0, 0.75),
             -0.05em 0.05em 0 rgba(0, 255, 0, 0.75),
             0.05em 0.05em 0 rgba(0, 0, 255, 0.75);
     }
 
-    85% {
+    64.5% {
         text-shadow:
             -0.05em -0.05 0 rgba(255, 0, 0, 0.75),
             0.05em 0.05em 0 rgba(0, 255, 0, 0.75),
             -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
     }
 
-    94% {
+    71% {
         text-shadow:
             -0.05em -0.05 0 rgba(255, 0, 0, 0.75),
             0.05em 0.05em 0 rgba(0, 255, 0, 0.75),
             -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
     }
 
-    95% {
+    71.5% {
+        text-shadow:
+            0.05em 0.05em 0 rgba(255, 0, 0, 0.75),
+            0.05em 0 0 rgba(0, 255, 0, 0.75),
+            0 -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+
+    78% {
         text-shadow:
             0.05em 0.05em 0 rgba(255, 0, 0, 0.75),
             0.05em 0 0 rgba(0, 255, 0, 0.75),
@@ -206,60 +215,8 @@ body {
     }
 
     100% {
-        text-shadow:
-            0.05em 0.05em 0 rgba(255, 0, 0, 0.75),
-            0.05em 0 0 rgba(0, 255, 0, 0.75),
-            0 -0.05em 0 rgba(0, 0, 255, 0.75);
+        text-shadow: none;
     }
-
-    /* 0% {
-        text-shadow:
-            0.05em 0 0 rgba(255, 0, 0, 0.75),
-            -0.05em 0.05em 0 rgba(0, 255, 0, 0.75),
-            0.05em 0.05em 0 rgba(0, 0, 255, 0.75);
-    }
-
-    14% {
-        text-shadow:
-            0.05em 0 0 rgba(255, 0, 0, 0.75),
-            -0.05em 0.05em 0 rgba(0, 255, 0, 0.75),
-            0.05em 0.05em 0 rgba(0, 0, 255, 0.75);
-    }
-
-    15% {
-        text-shadow:
-            -0.05em -0.05 0 rgba(255, 0, 0, 0.75),
-            0.05em 0.05em 0 rgba(0, 255, 0, 0.75),
-            -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
-    }
-
-    49% {
-        text-shadow:
-            -0.05em -0.05 0 rgba(255, 0, 0, 0.75),
-            0.05em 0.05em 0 rgba(0, 255, 0, 0.75),
-            -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
-    }
-
-    50% {
-        text-shadow:
-            0.05em 0.05em 0 rgba(255, 0, 0, 0.75),
-            0.05em 0 0 rgba(0, 255, 0, 0.75),
-            0 -0.05em 0 rgba(0, 0, 255, 0.75);
-    }
-
-    99% {
-        text-shadow:
-            0.05em 0.05em 0 rgba(255, 0, 0, 0.75),
-            0.05em 0 0 rgba(0, 255, 0, 0.75),
-            0 -0.05em 0 rgba(0, 0, 255, 0.75);
-    }
-
-    100% {
-        text-shadow:
-            -0.05em 0 0 rgba(255, 0, 0, 0.75),
-            -0.05em -0.05em 0 rgba(0, 255, 0, 0.75),
-            -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
-    } */
 }
 
 
