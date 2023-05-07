@@ -1,0 +1,32 @@
+.navbar {
+    background-color: rgb(120, 201, 241);
+    justify-content: center;
+}
+
+.navbar .container {
+    justify-content: center;
+}
+
+.navbar-collapse {
+    justify-content: center;
+    display: flex;
+    width: max-content !important;
+}
+
+.navbar-brand {
+    font-family: 'Caveat', cursive;
+    font-size: 3rem;
+    padding: 0;
+}
+
+.nav-item {
+    width: max-content;
+}
+
+.nav-btn {
+    font-size: 1.1rem;
+    background-color: white;
+    border-radius: 50px;
+    padding: 8px 15px;
+    margin: auto 20px;
+}
