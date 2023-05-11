@@ -1,10 +1,16 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body {
     font-family: 'Crimson Text', serif;
+    background-color: rgb(0, 0, 0);
 }
 
+/* rgb(17, 1, 37) */
 .header {
-    background-color: rgb(17, 1, 37);
-    padding: 40px 0;
+    padding: 20px 0;
 }
 
 .header .container {
@@ -39,12 +45,13 @@ body {
 }
 
 .info-text::before {
-    background-color: rgb(17, 1, 37);
+    background-color: black;
     animation: typewriter 9s steps(28) 1s infinite;
 }
 
 .info-text::after {
     width: 0.07em;
+    height: 1.25em;
     background-color: white;
     animation: typewriter 9s steps(28) 1s infinite,
         blink 500ms steps(28) infinite,
@@ -174,44 +181,44 @@ body {
 
     57% {
         text-shadow:
-            0.05em 0 0 rgba(255, 0, 0, 0.75),
-            -0.05em 0.05em 0 rgba(0, 255, 0, 0.75),
-            0.05em 0.05em 0 rgba(0, 0, 255, 0.75);
+            0.05em 0 0 rgba(40, 12, 68, 0.75),
+            -0.05em 0.05em 0 rgba(64, 64, 64, 0.75),
+            0.05em 0.05em 0 rgba(2, 47, 74, 0.75);
     }
 
     64% {
         text-shadow:
-            0.05em 0 0 rgba(255, 0, 0, 0.75),
-            -0.05em 0.05em 0 rgba(0, 255, 0, 0.75),
-            0.05em 0.05em 0 rgba(0, 0, 255, 0.75);
+            0.05em 0 0 rgba(40, 12, 68, 0.75),
+            -0.05em 0.05em 0 rgba(64, 64, 64, 0.75),
+            0.05em 0.05em 0 rgba(2, 47, 74, 0.75);
     }
 
     64.5% {
         text-shadow:
-            -0.05em -0.05 0 rgba(255, 0, 0, 0.75),
-            0.05em 0.05em 0 rgba(0, 255, 0, 0.75),
-            -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+            -0.05em -0.05 0 rgba(40, 12, 68, 0.75),
+            0.05em 0.05em 0 rgba(64, 64, 64, 0.75),
+            -0.05em -0.05em 0 rgba(2, 47, 74, 0.75);
     }
 
     71% {
         text-shadow:
-            -0.05em -0.05 0 rgba(255, 0, 0, 0.75),
-            0.05em 0.05em 0 rgba(0, 255, 0, 0.75),
-            -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+            -0.05em -0.05 0 rgba(40, 12, 68, 0.75),
+            0.05em 0.05em 0 rgba(64, 64, 64, 0.75),
+            -0.05em -0.05em 0 rgba(2, 47, 74, 0.75);
     }
 
     71.5% {
         text-shadow:
-            0.05em 0.05em 0 rgba(255, 0, 0, 0.75),
-            0.05em 0 0 rgba(0, 255, 0, 0.75),
-            0 -0.05em 0 rgba(0, 0, 255, 0.75);
+            0.05em 0.05em 0 rgba(40, 12, 68, 0.75),
+            0.05em 0 0 rgba(64, 64, 64, 0.75),
+            0 -0.05em 0 rgba(2, 47, 74, 0.75);
     }
 
     78% {
         text-shadow:
-            0.05em 0.05em 0 rgba(255, 0, 0, 0.75),
-            0.05em 0 0 rgba(0, 255, 0, 0.75),
-            0 -0.05em 0 rgba(0, 0, 255, 0.75);
+            0.05em 0.05em 0 rgba(40, 12, 68, 0.75),
+            0.05em 0 0 rgba(64, 64, 64, 0.75),
+            0 -0.05em 0 rgba(2, 47, 74, 0.75);
     }
 
     100% {
