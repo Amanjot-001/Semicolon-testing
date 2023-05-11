@@ -1,32 +1,136 @@
-.navbar {
-    background-color: rgb(120, 201, 241);
-    justify-content: center;
+.nav-bar {
+    background-color: black;
+    box-shadow: 0 -1px 10px rgb(255, 255, 255), 0 1px 10px rgb(255, 255, 255);
 }
 
-.navbar .container {
-    justify-content: center;
-}
-
-.navbar-collapse {
-    justify-content: center;
+.nav-bar .container {
     display: flex;
-    width: max-content !important;
 }
 
-.navbar-brand {
-    font-family: 'Caveat', cursive;
-    font-size: 3rem;
-    padding: 0;
-}
-
-.nav-item {
+.brand {
     width: max-content;
 }
 
-.nav-btn {
-    font-size: 1.1rem;
-    background-color: white;
-    border-radius: 50px;
-    padding: 8px 15px;
+.navbar-brand {
+    color: white;
+    font-family: 'Caveat', cursive;
+    font-size: 3.5rem;
+    padding: 0;
+}
+
+.navbar-brand:hover {
+    color: wheat;
+}
+
+.main-btns {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    margin: auto auto;
+}
+
+.main-btns>a {
+    display: flex;
+    align-items: center;
     margin: auto 20px;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-family: 'Darumadrop One', cursive;
+}
+
+.main-btns>a>span {
+    padding-bottom: 5px;
+    margin-left: 5px;
+    font-size: 2rem;
+}
+
+.main-btns>a:hover {
+    color: wheat;
+    text-shadow: 0 0 1px rgb(255, 255, 255), 0 0 1px rgb(255, 255, 255);
+}
+
+.side-btns {
+    display: flex;
+    align-items: center;
+    width: max-content;
+}
+
+.side-btns>a {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.side-btns>a:hover {
+    text-shadow: 0 -2px 5px rgb(234, 238, 117), 0 2px 5px rgb(234, 238, 117);
+}
+
+@media (max-width: 200px) {
+    .navbar-brand {
+        font-size: 25vw;
+    }
+}
+
+/* @media (max-width: 400px) {
+    .nav-bar .container {
+        padding: 10px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .brand {
+        margin: auto auto;
+    }
+
+    .main-btns {
+        margin: 10px auto;
+    }
+
+    .side-btns {
+        margin: 10px auto;
+    }
+} */
+
+@media (max-width: 400px) {
+    .nav-bar .container {
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .brand {
+        flex: 1 1 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .main-btns,
+    .side-btns {
+        margin: 10px auto;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .main-btns>a>span {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-btns>a {
+        margin: auto 5px;
+        font-size: 1.5rem;
+    }
+
+    .side-btns>a {
+        margin: 0 5px;
+        font-size: 1.3rem;
+    }
 }
